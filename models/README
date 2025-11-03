@@ -1,0 +1,58 @@
+=====================================================
+hoerbuch - Text-to-Speech Audiobook Generator with Piper TTS
+=====================================================
+
+This script converts text documents (.txt, .docx, .odt, .epub) into audio formats (OGG/MP3) using the Piper Text-to-Speech system.
+
+▶ IMPORTANT NOTE ON VOICE FILES
+
+To run this script, you must manually download the required ONNX voice file for the Thorsten voice and save it in the 'models' subdirectory.
+
+1. Create a subdirectory named 'models' in the script's main directory.
+2. Download the following file:
+
+   ONNX_URL="https://huggingface.co/rhasspy/piper-voices/resolve/main/de/de_DE/thorsten/high/de_DE-thorsten-high.onnx"
+
+3. Save the file as: models/de_DE-thorsten-high.onnx
+
+Alternatively, you can specify any ONNX file using the '--voice' argument.
+
+▶ USAGE
+
+python3 hoerbuch.py [OPTIONS] <INPUT_FILE>
+
+Examples:
+  ./hoerbuch.py book.epub -k        # Interactive chapter selection
+  ./hoerbuch.py -k 5 book.epub      # Convert only chapter 5
+  ./hoerbuch.py -m document.docx    # Convert to MP3
+
+
+
+
+=====================================================
+hoerbuch - Text-to-Speech Hörbuch-Generator mit Piper TTS
+=====================================================
+
+Dieses Skript konvertiert Textdokumente (.txt, .docx, .odt, .epub) in Audioformate (OGG/MP3) unter Verwendung des Piper Text-to-Speech-Systems.
+
+▶ WICHTIGER HINWEIS ZU STIMMEN-DATEIEN
+
+Um dieses Skript auszuführen, müssen Sie die erforderliche ONNX-Stimmendatei für die Thorsten-Stimme manuell herunterladen und im 'models'-Unterordner speichern.
+
+1. Erstellen Sie einen Unterordner namens 'models' im Hauptverzeichnis des Skripts.
+2. Laden Sie die folgende Datei herunter:
+
+   ONNX_URL="https://huggingface.co/rhasspy/piper-voices/resolve/main/de/de_DE/thorsten/high/de_DE-thorsten-high.onnx"
+
+3. Speichern Sie die Datei unter: models/de_DE-thorsten-high.onnx
+
+Alternativ können Sie eine beliebige ONNX-Datei mit dem Argument '--voice' angeben.
+
+▶ BENUTZUNG
+
+python3 hoerbuch.py [OPTIONEN] <INPUT_DATEI>
+
+Beispiele:
+  ./hoerbuch.py buch.epub -k        # Interaktive Kapitel-Auswahl
+  ./hoerbuch.py -k 5 buch.epub      # Nur Kapitel 5 konvertieren
+  ./hoerbuch.py -m dokument.docx    # Konvertiert in MP3

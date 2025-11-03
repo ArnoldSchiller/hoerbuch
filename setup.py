@@ -31,6 +31,7 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: GPL 3.0 License',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)', 
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
