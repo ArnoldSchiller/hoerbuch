@@ -5,6 +5,8 @@ lang: de-DE
 hoerbuch – Text-to-Speech Hörbuch-Generator mit Piper TTS
 ==========================================================
 
+``` python3 hoerbuch.py --voice ../models/de_DE-thorsten-high.onnx README.txt -d ```
+
 ## Beschreibung
 ------------
 Dieses CLI-Tool wandelt Textdokumente (.txt, .docx, .odt, .epub) in komprimierte OGG-Audiodateien um, optional konvertiert es sie direkt in MP3 mit Kapiteltags.
