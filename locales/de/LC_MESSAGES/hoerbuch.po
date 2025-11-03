@@ -1,0 +1,314 @@
+# German translations for Piper TTS Hörbuch-Generator.
+# Copyright (C) 2024 Piper TTS
+# This file is distributed under the same license as the Piper TTS package.
+# Automatisch generierte Übersetzung, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Piper TTS Hörbuch-Generator 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 12:00+0100\n"
+"PO-Revision-Date: 2024-01-01 12:00+0100\n"
+"Last-Translator: Automatische Übersetzung\n"
+"Language-Team: Deutsch <de@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Standard-argparse Texte
+msgid "show this help message and exit"
+msgstr "zeige diese Hilfemeldung und beende"
+
+msgid "positional arguments"
+msgstr "positionelle Argumente"
+
+msgid "optional arguments"
+msgstr "Optionen"
+
+msgid "options"
+msgstr "Optionen"
+
+msgid "usage: "
+msgstr "Verwendung: "
+
+msgid "the following arguments are required: %s"
+msgstr "die folgenden Argumente sind erforderlich: %s"
+
+# Fehlermeldungen
+msgid "Error: python-docx not found. Install with: sudo apt install python3-docx"
+msgstr "Fehler: python-docx nicht gefunden. Installieren mit: sudo apt install python3-docx"
+
+msgid "Error: python3-odf not found. Install with: sudo apt install python3-odf"
+msgstr "Fehler: python3-odf nicht gefunden. Installieren mit: sudo apt install python3-odf"
+
+msgid "Error: python3-ebooklib not found. Install with: pip install ebooklib"
+msgstr "Fehler: python3-ebooklib nicht gefunden. Installieren mit: pip install ebooklib"
+
+msgid "Error: Unsupported file extension '{ext}'. Supported: .txt, .docx, .odt, .epub."
+msgstr "Fehler: Nicht unterstützte Dateiendung '{ext}'. Unterstützt: .txt, .docx, .odt, .epub."
+
+msgid "Error during document parsing: {msg}"
+msgstr "Fehler beim Parsen des Dokuments: {msg}"
+
+msgid "Error: Input file '{file}' not found."
+msgstr "Fehler: Eingabedatei '{file}' nicht gefunden."
+
+msgid "Critical error: {msg}"
+msgstr "Kritischer Fehler: {msg}"
+
+msgid "Fatal: Voice model '{file}' not found in any path (including script/models and install dir)."
+msgstr "Fatal: Sprachmodell '{file}' wurde in keinem Pfad gefunden (einschließlich script/models und Installationsverzeichnis)."
+
+msgid "Warning: Explicit voice file not found at '{file}'. Trying defaults..."
+msgstr "Warnung: Explizite Sprachdatei nicht gefunden unter '{file}'. Versuche Standardwerte..."
+
+# Segmentierung und Metadaten
+msgid "Segment {n}"
+msgstr "Abschnitt {n}"
+
+msgid "TXT detected. Extracting segments..."
+msgstr "TXT erkannt. Extrahiere Segmente..."
+
+msgid "DOCX detected. Extracting segments..."
+msgstr "DOCX erkannt. Extrahiere Segmente..."
+
+msgid "ODT detected. Extracting segments..."
+msgstr "ODT erkannt. Extrahiere Segmente..."
+
+msgid "EPUB detected. Extracting chapters..."
+msgstr "EPUB erkannt. Extrahiere Kapitel..."
+
+msgid "Warning: Document contains no extractable text segments."
+msgstr "Warnung: Dokument enthält keine extrahierbaren Textsegmente."
+
+msgid "Using title: '{title}', artist: '{artist}'"
+msgstr "Verwende Titel: '{title}', Künstler: '{artist}'"
+
+# TTS Synthese
+msgid "Loading voice from: {file}"
+msgstr "Lade Stimme von: {file}"
+
+msgid "Using voice from: {file}"
+msgstr "Verwende Stimme von: {file}"
+
+msgid "Synthesizing ({n} characters in {m} segments)..."
+msgstr "Synthetisiere ({n} Zeichen in {m} Segmenten)..."
+
+msgid "-> TTS speed adjusted to: {speed} (1.0 = normal)"
+msgstr "-> TTS-Geschwindigkeit angepasst auf: {speed} (1.0 = normal)"
+
+msgid "  -> Segment started: {title} at {time:.2f}s"
+msgstr "  -> Segment gestartet: {title} bei {time:.2f}s"
+
+msgid "  -> Synthesizing chapter: '{title}'"
+msgstr "  -> Synthetisiere Kapitel: '{title}'"
+
+# OGG Ausgabe
+msgid "✅ Chapter markers and metadata written to OGG Vorbis comments."
+msgstr "✅ Kapitel-Marker und Metadaten in OGG Vorbis-Kommentare geschrieben."
+
+msgid "✅ OGG file successfully written: {file}"
+msgstr "✅ OGG-Datei erfolgreich geschrieben: {file}"
+
+msgid "Total duration: {time:.2f}s"
+msgstr "Gesamtdauer: {time:.2f}s"
+
+msgid "Warning: Failed to write OGG Vorbis markers: {msg}"
+msgstr "Warnung: Konnte OGG Vorbis-Marker nicht schreiben: {msg}"
+
+msgid "Warning: Failed to write OGG Vorbis metadata for single chapter: {msg}"
+msgstr "Warnung: Konnte OGG Vorbis-Metadaten für einzelnes Kapitel nicht schreiben: {msg}"
+
+# OGG Marker lesen
+msgid "Attempting to read custom markers from existing OGG file..."
+msgstr "Versuche benutzerdefinierte Marker aus existierender OGG-Datei zu lesen..."
+
+msgid "✅ Successfully read {n} precise markers from OGG file."
+msgstr "✅ Erfolgreich {n} präzise Marker aus OGG-Datei gelesen."
+
+# Approximative Marker
+msgid "Calculating approximate markers from existing OGG file..."
+msgstr "Berechne ungefähre Marker aus existierender OGG-Datei..."
+
+msgid "Error reading OGG duration for marker calculation: {msg}"
+msgstr "Fehler beim Lesen der OGG-Dauer für Marker-Berechnung: {msg}"
+
+msgid "  -> Approximate segment start: {title} at {time:.2f}s"
+msgstr "  -> Ungefährer Segmentstart: {title} bei {time:.2f}s"
+
+msgid "Total approximate duration used for calculation: {time:.2f}s"
+msgstr "Gesamte ungefähre Dauer für Berechnung verwendet: {time:.2f}s"
+
+# MP3 Konvertierung
+msgid "Fatal: ffmpeg is required for MP3 conversion but was not found. Please install ffmpeg."
+msgstr "Fatal: ffmpeg wird für MP3-Konvertierung benötigt, wurde aber nicht gefunden. Bitte installieren Sie ffmpeg."
+
+msgid "Converting OGG to MP3 (CBR 320k)..."
+msgstr "Konvertiere OGG zu MP3 (CBR 320k)..."
+
+msgid "✅ MP3 file successfully converted: {file}"
+msgstr "✅ MP3-Datei erfolgreich konvertiert: {file}"
+
+msgid "→ Temporary OGG file deleted: {file}"
+msgstr "→ Temporäre OGG-Datei gelöscht: {file}"
+
+msgid "Error during MP3 conversion (ffmpeg failed): {msg}"
+msgstr "Fehler bei MP3-Konvertierung (ffmpeg fehlgeschlagen): {msg}"
+
+msgid "Error: ffmpeg command not found."
+msgstr "Fehler: ffmpeg-Befehl nicht gefunden."
+
+msgid "Writing chapter markers and metadata to MP3..."
+msgstr "Schreibe Kapitel-Marker und Metadaten in MP3..."
+
+msgid "✅ Metadata written successfully (Title: '{title}', Artist: '{artist}')."
+msgstr "✅ Metadaten erfolgreich geschrieben (Titel: '{title}', Künstler: '{artist}')."
+
+msgid "Error writing MP3 chapter tags: {msg}"
+msgstr "Fehler beim Schreiben der MP3-Kapitel-Tags: {msg}"
+
+msgid "Please ensure required libraries are installed and the file is valid."
+msgstr "Bitte stellen Sie sicher, dass die benötigten Bibliotheken installiert sind und die Datei gültig ist."
+
+msgid "Error writing simple MP3 tags: {msg}"
+msgstr "Fehler beim Schreiben einfacher MP3-Tags: {msg}"
+
+msgid "  -> MP3 tagged: {file}"
+msgstr "  -> MP3 getaggt: {file}"
+
+# Kapitel-Modus
+msgid "\n[Chapter mode: direct chapter {n} - '{title}']"
+msgstr "\n[Kapitelmodus: direktes Kapitel {n} - '{title}']"
+
+msgid "Warning: output file already exists: {file}"
+msgstr "Warnung: Ausgabedatei existiert bereits: {file}"
+
+msgid "Warning: chapter {n} not found (document has {m} chapters)."
+msgstr "Warnung: Kapitel {n} nicht gefunden (Dokument hat {m} Kapitel)."
+
+msgid "\n✨ Interactive chapter mode started ✨"
+msgstr "\n✨ Interaktiver Kapitelmodus gestartet ✨"
+
+msgid "{n} chapters detected:"
+msgstr "{n} Kapitel erkannt:"
+
+msgid "\nOptions:"
+msgstr "\nOptionen:"
+
+msgid "  [a] All chapters in ONE OGG file (with chapter markers)"
+msgstr "  [a] Alle Kapitel in EINER OGG-Datei (mit Kapitel-Markern)"
+
+msgid "  [s] Split chapters: ONE file per chapter"
+msgstr "  [s] Kapitel aufteilen: EINE Datei pro Kapitel"
+
+msgid "  [<number>] Synthesize a single specific chapter (e.g. '2')"
+msgstr "  [<Zahl>] Synthetisiere ein einzelnes spezifisches Kapitel (z.B. '2')"
+
+msgid "Your choice: "
+msgstr "Ihre Auswahl: "
+
+msgid "\n→ Synthesizing all chapters into a combined OGG..."
+msgstr "\n→ Synthetisiere alle Kapitel in eine kombinierte OGG-Datei..."
+
+msgid "✅ Combined synthesis finished."
+msgstr "✅ Kombinierte Synthese abgeschlossen."
+
+msgid "\n→ Synthesizing each chapter to separate files..."
+msgstr "\n→ Synthetisiere jedes Kapitel in separate Dateien..."
+
+msgid "Skipping chapter '{title}': output file '{file}' already exists."
+msgstr "Überspringe Kapitel '{title}': Ausgabedatei '{file}' existiert bereits."
+
+msgid "Error synthesizing chapter {n} ('{title}'): {msg}"
+msgstr "Fehler beim Synthetisieren von Kapitel {n} ('{title}'): {msg}"
+
+msgid "✅ All chapters processed in split-file mode."
+msgstr "✅ Alle Kapitel im Aufteilungsmodus verarbeitet."
+
+msgid "✅ Single chapter finished."
+msgstr "✅ Einzelnes Kapitel abgeschlossen."
+
+msgid "Invalid selection, aborting."
+msgstr "Ungültige Auswahl, breche ab."
+
+msgid "Continuing with standard single-file synthesis (no chapter mode)."
+msgstr "Fahre mit Standard-Einzeldatei-Synthese fort (kein Kapitelmodus)."
+
+# Datei-Existenz-Prüfungen
+msgid "Existing OGG file found. Reusing for fast MP3 conversion."
+msgstr "Existierende OGG-Datei gefunden. Verwende sie für schnelle MP3-Konvertierung."
+
+msgid "→ Using precise markers from OGG for MP3 tagging."
+msgstr "→ Verwende präzise Marker aus OGG für MP3-Tagging."
+
+msgid "→ Warning: No OGG markers found. Estimating markers from text length."
+msgstr "→ Warnung: Keine OGG-Marker gefunden. Schätze Marker aus Textlänge."
+
+msgid "🛑 Output file '{file}' already exists. Skipping synthesis/conversion."
+msgstr "🛑 Ausgabedatei '{file}' existiert bereits. Überspringe Synthese/Konvertierung."
+
+msgid "→ Please rename or delete the existing file if you wish to regenerate the audio."
+msgstr "→ Bitte benennen Sie die existierende Datei um oder löschen Sie sie, wenn Sie das Audio neu generieren möchten."
+
+# Fehlerbereinigung
+msgid "→ Temporary OGG file deleted after error."
+msgstr "→ Temporäre OGG-Datei nach Fehler gelöscht."
+
+msgid "→ Partial MP3 file deleted after error."
+msgstr "→ Partielle MP3-Datei nach Fehler gelöscht."
+
+# Standardwerte
+msgid "Unknown Title"
+msgstr "Unbekannter Titel"
+
+msgid "Piper TTS"
+msgstr "Piper TTS"
+
+msgid "Unknown"
+msgstr "Unbekannt"
+
+# Help-Texte
+msgid "Convert text documents (.txt, .docx, .odt, .epub) to OGG audio using Piper TTS, with optional MP3 conversion and chapter control."
+msgstr "Konvertiere Textdokumente (.txt, .docx, .odt, .epub) zu OGG-Audio mit Piper TTS, mit optionaler MP3-Konvertierung und Kapitelsteuerung."
+
+msgid "Show debug messages"
+msgstr "Zeige Debug-Nachrichten"
+
+msgid "Input file path (.txt, .docx, .odt, .epub)"
+msgstr "Eingabedatei-Pfad (.txt, .docx, .odt, .epub)"
+
+msgid "Optional ONNX voice file path"
+msgstr "Optioneller ONNX-Sprachdatei-Pfad"
+
+msgid "Convert OGG output to MP3 format with chapter tags (requires ffmpeg)"
+msgstr "Konvertiere OGG-Ausgabe in MP3-Format mit Kapitel-Tags (benötigt ffmpeg)"
+
+msgid "TTS speech rate multiplier (1.0 = normal, 0.9 = slower)"
+msgstr "TTS-Sprachgeschwindigkeits-Multiplikator (1.0 = normal, 0.9 = langsamer)"
+
+msgid "Interactive (-k) or direct chapter (e.g. -k 5). Position independent."
+msgstr "Interaktiv (-k) oder direktes Kapitel (z.B. -k 5). Positionsunabhängig."
+
+msgid "Examples:"
+msgstr "Beispiele:"
+
+msgid "  %(prog)s book.epub                    # Convert EPUB to OGG"
+msgstr "  %(prog)s book.epub                    # Konvertiere EPUB zu OGG"
+
+msgid "  %(prog)s -m -s 0.9 document.docx      # Convert to MP3 with slower speed"
+msgstr "  %(prog)s -m -s 0.9 document.docx      # Konvertiere zu MP3 mit langsamerer Geschwindigkeit"
+
+msgid "  %(prog)s book.epub -k -1              # Interactive chapter selection"
+msgstr "  %(prog)s book.epub -k -1              # Interaktive Kapitelauswahl"
+
+msgid "  %(prog)s book.epub -k 3               # Convert only chapter 3"
+msgstr "  %(prog)s book.epub -k 3               # Konvertiere nur Kapitel 3"
+
+msgid "  %(prog)s -k 3 book.epub               # Also accepted (position independent)"
+msgstr "  %(prog)s -k 3 book.epub               # Auch akzeptiert (positionsunabhängig)"
+
+# OGG gespeichert
+msgid "  -> OGG saved: {file} (Duration: {time:.2f}s)"
+msgstr "  -> OGG gespeichert: {file} (Dauer: {time:.2f}s)"

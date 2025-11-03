@@ -1,0 +1,5 @@
+numpy>=1.23.0
+soundfile>=0.12.1
+python-docx>=0.8.11
+odfpy>=1.4.1
+piper-tts>=0.3.4

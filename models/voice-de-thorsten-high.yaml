@@ -1,0 +1,4 @@
+backend: piper
+name: voice-de-thorsten-high
+parameters:
+  model: de_DE-thorsten-high.onnx
