@@ -1,5 +1,9 @@
-# hoerbuch
+title: "hoerbuch – Text-to-Speech Hörbuch-Generator"
+author: Schiller
+lang: de-DE
+
 hoerbuch – Text-to-Speech Hörbuch-Generator mit Piper TTS
+==========================================================
 
 ## Beschreibung
 ------------
